@@ -1,0 +1,10 @@
+<% flash.each do | type, message| %>
+ 
+  <div class="ui <%= type %> message transition">
+    <i class="close icon" onclick="this.parentElement.style.display='none';"></i>
+    <div class="header">
+      <%= message %>
+    </div>
+  </div>
+
+<% end %>
