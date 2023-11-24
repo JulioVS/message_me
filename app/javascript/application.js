@@ -15,3 +15,4 @@ $(document).on('turbo:load', function() {
   console.log('loaded turbo links')
   $('.ui.dropdown').dropdown()
 });
+import "channels"

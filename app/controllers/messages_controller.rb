@@ -15,7 +15,8 @@ class MessagesController < ApplicationController
     # despliegue en la caja de chats.-
     #
     if message.save
-      redirect_to root_path
+      # redirect_to root_path
+      ActionCable.server.broadcast "chatroom_channel", { foo: message.body }   
     end
   end
 
