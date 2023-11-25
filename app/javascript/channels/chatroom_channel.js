@@ -15,5 +15,6 @@ consumer.subscriptions.create("ChatroomChannel", {
     // alert(data.message);  
     $('#message-container').append(data.message);
     $('#messages').scrollTop($('#messages')[0].scrollHeight);
+    $('#message_body').val("");
   }
 });
